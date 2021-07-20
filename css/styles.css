@@ -1,0 +1,778 @@
+/*
+1. Posicionamiento
+2. Medlo de caja (Box model)
+3. Tipografia
+4. Estilos de temas visuales
+5.  Otros
+*/
+:root{
+    /*Colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange:#FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --Soft-blue:#E7F5FF;
+    --warm-black:#282623;
+    --black: #201E1C;
+    --grey:#BABABA;
+    --off-white:#FAF8F7;
+    --just-white:#FFFFFF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family:"Dm sans", sans-serif ;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img{
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    align-self: center;
+}
+
+.header--title-container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title-container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title-container .header--button{
+position: absolute;
+left:calc(50% - 118px);
+top: 270px;
+display:block;
+margin-top: 35px;
+padding:15px;
+width: 229px;
+height: 48px;
+background-color: var(--off-white);
+/*sombra*/
+box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+border:none;
+border-radius: 5px;
+font-size: 1.4rem;
+font-weight: bold;
+text-decoration: none;
+color: var(--black);
+}
+
+.header--title-container span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/down-arrow.svg");
+}
+
+/*Estilos Primera Sección*/
+main{
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container{
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.main-exchange-container .backgroundImg{
+    width: 195px;
+    height: 195px;
+    align-self: center;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Img/bitcoin.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: none ;
+}
+.main-exchange-container--title {
+    min-width: 288px;
+    max-width: 900px;
+    height: 130px;
+    margin:20px auto;
+    margin-bottom: 48px;
+    align-self: center;
+    text-align: center; 
+}
+.main-exchange-container--title h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color:var(--warm-black);
+}
+.main-exchange-container--title p{
+    margin-top:24px;
+    margin-bottom: 48px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6 rem;
+    color:#757575;
+}
+/*Styles Exchange Table */
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin:0 auto;
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.main-currency-table .currency-table--title{
+margin-bottom: 15px;
+margin-left: 20px;
+width: 81px;
+height: 23px;
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 1.8rem;
+line-height: 2.3rem;
+color: var(--bitcoin-orange);
+}
+.currency-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+.currency-table--container table{
+    width: 100%;
+    height: 100%; 
+}
+.currency-table--container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color:var(--grey);
+    background-color: var(--just-white);
+    text-align: center;
+}
+.currency-table--container .table__top-left{
+    border-top-left-radius: 10px;
+}
+.currency-table--container .table__top-right{
+    border-top-right-radius: 10px;
+}
+.currency-table--container .table__bottom-left{
+    border-bottom-left-radius: 10px;
+}
+.currency-table--container .table__bottom-right{
+    border-bottom-right-radius: 10px;
+}
+.currency-table--container .table__right{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.table__right .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image:url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/trending-down.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.table__right .up{
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+    background-image:url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/trending-up.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat ;
+}
+.currency-table--date{
+    display: flex;
+    flex-direction: column;
+    margin-top:16px;
+    padding: 8px;
+    width: 183px;
+    text-align: center;
+    align-self: center;
+    background-color: var(--soft-orange);
+    border-radius: 5px;
+}
+.currency-table--date b{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+.currency-table--date p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+/*Styles comsion Table*/
+.main-comision-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin:0 auto;
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.main-comision-table .comision-table--title{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    width: 81px;
+    height: 23px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+    }
+.comision-table--container{
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 200px;
+    margin: 0 auto;
+}
+.comision-table--container table{
+    width: 100%;
+    height: 100%; 
+}
+.comision-table--container td{
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color:var(--grey);
+    background-color: var(--just-white);
+    text-align: center;
+}
+.comision-table--container .table__top-left{
+    border-top-left-radius: 10px;
+}
+.comision-table--container .table__top-right{
+    border-top-right-radius: 10px;
+}
+.comision-table--container .table__bottom-left{
+    border-bottom-left-radius: 10px;
+}
+.comision-table--container .table__bottom-right{
+    border-bottom-right-radius: 10px;
+}
+.comision-table--container .table__right{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.table__right .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image:url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/trending-down.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.table__right .up{
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
+    background-image:url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/trending-up.svg");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.comision-table--date{
+    display: flex;
+    flex-direction: column;
+    margin-top:16px;
+    padding: 8px;
+    width: 183px;
+    text-align: center;
+    align-self: center;
+    background-color: var(--Soft-blue);
+    border-radius: 5px;
+}
+.comision-table--date b{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+}
+.comision-table--date p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+/*Logo Between sections*/
+.logo--sections{
+    min-width: 320px;
+    width: 100%;
+    height: 25px;
+    display:inline-block;
+    position: relative;
+}  
+.logo--sections span{
+    width: 40px;
+    height: 24px;
+    top:18px;
+    left:calc(50% - 20px);
+    position: absolute;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/batata-logo.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+/*Estilos Segunda sección*/
+.main-product-detail{
+    min-width:320px;
+    width: 100%;
+    max-width: 900px;
+    height: 910px;
+    margin: 0 auto;
+    padding:54px 16px 47px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color:var(--just-white); 
+}
+.description-title{
+    width: 288px;
+    height: 94px;
+    margin-top: 64px;
+    align-self: center;
+}
+.description-title h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.description-title p{
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color:#808080;
+}
+.product-cards--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.product-detail--first-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    padding:18px;
+    margin-top:32px;
+    border-radius: 4px;
+    background-color: var(--warm-black);
+    align-self: center; 
+}
+.product-detail--first-card span{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-items: center;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/clock.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.product-detail--first-card h3{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.product-detail--first-card p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--second-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    padding:18px;
+    margin-top:32px;
+    border-radius: 4px;
+    background-color: var(--warm-black);
+    align-self: center;    
+}
+.product-detail--second-card span{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-items: center;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/eye.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.product-detail--second-card h3{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.product-detail--second-card p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--third-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    padding:18px;
+    margin-top:32px;
+    border-radius: 4px;
+    background-color: var(--warm-black);
+    align-self: center; 
+}
+.product-detail--third-card span{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-items: center;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/dollar-sign.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.product-detail--third-card h3{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.product-detail--third-card p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--fourth-card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 152px;
+    padding:18px;
+    margin-top:32px;
+    margin-bottom:40px;
+    border-radius: 4px;
+    background-color: var(--warm-black);
+    align-self: center;
+}
+.product-detail--fourth-card span{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 12px;
+    display: inline-block;
+    align-items: center;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/check-circle.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.product-detail--fourth-card h3{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+.product-detail--fourth-card p{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+/*Tercera Sección*/
+.img-container{
+    width: 100%;
+    min-height: 380px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.img-container span{
+    width: 100%;
+    max-width: 900px;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Img/bitcoinbaby2x.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:static;
+}
+.img-container span p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:65px;
+    font-size:2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+/*Cuarta Sección*/
+.main-plans-container{
+    min-width: 320px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:var(--off-white);
+}
+.plans-container--slider{
+    height: 400px;
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 30px;
+    align-items: center;
+    justify-content:flex-start;
+}
+.main-plans-container .plans-title{
+    min-width: 320px;
+    margin: 64px auto 0px auto;
+    padding: 0px 15px 0px 17px;
+    background-color: var(--off-white);
+    align-self: center;
+}
+.main-plans-container .plans-title h3{
+    width:100%;
+    margin-bottom:24px ;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--black);
+    align-self: center;
+    text-align: center;
+}
+.main-plans-container .plans-title p{
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color:#757575;
+    align-self: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.plans-container--card01 {
+    min-width: 190px;
+    height: 247px;
+    margin-left: 30px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card02{
+    min-width: 190px;
+    height: 247px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16); 
+}
+.plans-container--card03{
+    min-width: 190px;
+    height: 247px;
+    margin-right: 50px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16); 
+}
+.plans-container--card02 .recommended {
+    width: 101px;
+    height: 31px;
+    background-color: var(--bitcoin-orange);
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:-15px;
+    left:calc(50%-25px);
+}
+.plans-container--card02 .recommended p{
+    font-family: "Inter";
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color:var(--off-white);
+}
+
+.plan-info-container{
+    width: 100%;
+    text-align: center;
+}
+.plans-container--card01 .plan-card--title,
+.plans-container--card02 .plan-card--title,
+.plans-container--card03 .plan-card--title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    padding: 31px 0px 8px 0px; 
+}
+.plans-container--card01 .plan-card--price,
+.plans-container--card02 .plan-card--price,
+.plans-container--card03 .plan-card--price {
+    font-family: "inter";
+    font-size: 5.2rem;
+    font-weight: 700;
+    letter-spacing: -4px;
+    line-height: 6.3rem;
+    display: relative;
+}
+.plans-container--card01 .plan-card--price span,
+.plans-container--card02 .plan-card--price span,
+.plans-container--card03 .plan-card--price span {
+    font-size: 1.2rem;
+    position: absolute;
+    top:58px;
+    left:52px;
+}
+.plans-container--card01 .plan-card--saving,
+.plans-container--card02 .plan-card--saving, .plans-container--card03 .plan-card--saving {
+    font-family: "inter";
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: #757575;
+    margin-bottom:15px;
+}
+
+.plans-container--card01 .plan-card--ca,
+.plans-container--card02 .plan-card--ca,
+.plans-container--card03 .plan-card--ca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    background-color: var(--off-white);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+}
+.plans-container--card01 .plan-card--ca span,
+.plans-container--card02 .plan-card--ca span
+.plans-container--card03 .plan-card--ca span{
+    width: 24px;
+    height: 24px;
+    margin-left:10px;
+    background-image:url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Icons/orange-arrow-right.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+/*Estilos del footer*/
+.footer{
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    padding: 40px 58px 40px 65px ;
+    background-color:var(--bitcoin-orange) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.social-networks{
+    width:90px;
+    align-self: start;
+     
+}
+.social-networks p{
+    padding: 0px 0px 8px 0px;
+}
+.social-networks a{
+    
+    font-size:1.4rem ;
+    font-weight:500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    text-decoration: none; 
+}
+.logo-batata{
+    width: 60px;
+    height: 50px;
+    background-image: url("/curso-responsive-design-maquetacion-mobileFirst/Assets/Img/logo-footer.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
